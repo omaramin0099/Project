@@ -1,0 +1,278 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ===============================NAV========================================================= */
+.nav{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    overflow: auto;
+    z-index: 51545454545;
+}
+.nav ul{
+    list-style-type: none;
+    
+}
+.nav ul li{
+    display: inline;
+float: right;
+    margin: 25px;
+}
+.nav ul li a{
+    
+    padding: 7px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    
+}
+.nav ul li a:hover{
+    transition: 0.7s;
+    transform: scale(20);
+    color: black;
+    background-color: #fff;
+    border-radius: 35px;
+
+}
+.nav ul li:hover{
+    transition: 0.7s;
+    transform: scale(1.1);
+}
+/* ===============================NAV end========================================================= */
+
+/* ===============================Home========================================================= */
+.home{
+    background-image: url(../img/p3.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 1000px;
+    margin: 0px;
+    text-align: center;
+    padding-top: 130px;
+
+    position: relative;
+}
+.home h1{
+    font-size: 85px;
+    font-family: cursive;
+    color: cornsilk;
+    font-weight: 100;
+}
+
+.home .caption{
+
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 500px;
+    justify-content: center;
+}
+.home .caption img{
+    /* margin: 17px; */
+    transition: 0.7s;
+
+}
+.home .caption img:hover{
+    transition: 0.7s;
+    transform: scale(1.35);
+}
+.home button{
+    font-size: 30px;
+    border-radius: 35px;
+    border:5px inherit black ;
+    position: absolute;
+    top: 800px;
+    right: 650px;   
+    padding: 5px 13px;
+}
+
+/* ============================End home======================================================= */
+/* =================================Products================================================== */
+
+.container{
+    display: flex;
+    /* background-color:rgb(207, 93, 93); */
+    background-image: url(../img/p3.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content:flex-start;
+
+}
+.container .product img{
+    margin: 10px 0px;
+    border-radius: 35px;
+}
+.container h1{
+    
+    margin: 100px 450px;
+    font-size: 85px;
+    font-family: cursive;
+    color: cornsilk;
+    font-weight: 100;
+}
+.container .product{
+    width: 23%;
+    margin: 15px 12px 30px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: rgb(42, 106, 165);
+    border-radius: 20px;
+    border: 3px solid black;
+}
+.container .product button{
+    margin-top: 12px;
+    font-size: 20px;
+    border-radius: 35px; 
+    padding: 3px 7px;
+    border:5px inherit black ;
+}
+/* =======================================END Products=================================================== */
+/* =======================================Profile======================================================== */
+
+.profile{
+    /* background-image: url(../img/p3.jpg); */
+    height: 1000px;
+    padding-bottom: 100px;
+}
+.profile h1{
+    text-align: center;
+    margin-top: 75px;
+    font-size: 60px;
+    font-family: cursive;
+    position: relative;
+}
+.profile h1::before{
+    content: "";
+    width: 43.5%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left:0px;
+}
+.profile h1::after{
+    content: "";
+    width: 43.5%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    right:0px;
+}
+.profile h2{
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: cursive;
+}
+.profile .container1{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+.profile .container1 .prof{
+    width: 350px;
+    height: 350px;
+    margin: 20px 70px;
+    background-image: url(../img/profunnamed.png);
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5000px;
+}
+.profile .container1 .prof div{
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-family: cursive;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    left: 100%;
+    top: 100%;
+    transition: 1s;
+    border-radius: 5000px;
+    text-align: center;
+}
+.profile .container1 .prof:hover div{
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.5);
+    top:0%;
+    left: 0%;
+}
+.profile .container1 .prof div p{
+    position: absolute;
+    top: 30%;
+}
+.profile .container1 .prof div button{
+    font-size: 20px;
+    padding: 5px 7px;
+    border-radius: 50px;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 10%;
+    right: 38.5%;
+}
+
+.profile .user{
+    position: absolute;
+    top: 780px;
+    left: 42.5%;
+    width: 380px;
+    height: 110px;
+}
+.profile .user input{
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    margin: 7px;
+    font-size: 20px;
+}
+.profile .user label{
+    position: absolute;
+    top: 15px;
+    right: 205px;
+    color:#5E5E5B;
+    font-size: 20px;
+}
+.profile .user input:focus+ label{
+    transition:0.7s;
+    top: -25px;
+    right: 275px;
+}
+.profile .user button{
+    font-size: 15px;
+    padding: 5px 7px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+.profile h3{
+    position: absolute;
+    left:42.5%;
+    top: 950px; 
+    font-size: 30px;
+    font-family: cursive;
+}
+.profile h3 a{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    padding: 0px 5px;
+}
+.profile h3 a:hover{
+    transition: 0.5s;
+    border-radius: 5000px;
+    background-color:rgb(61, 59, 59);
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+}
